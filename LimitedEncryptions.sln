@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimitedEncryptions", "LimitedEncryptions.csproj", "{8EC6C20C-4E0A-4880-85B5-553A43FEAB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionAlgorithms", "..\..\..\GitHub\Classical-Encryption-Techniques\EncryptionAlgorithms\EncryptionAlgorithms.csproj", "{175CB11B-9424-4ED6-87A3-34361ED4FDB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\UnitTest\UnitTest.csproj", "{07054276-69B6-4B29-AAC8-0DF2E1D437F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EC6C20C-4E0A-4880-85B5-553A43FEAB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC6C20C-4E0A-4880-85B5-553A43FEAB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC6C20C-4E0A-4880-85B5-553A43FEAB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC6C20C-4E0A-4880-85B5-553A43FEAB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175CB11B-9424-4ED6-87A3-34361ED4FDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175CB11B-9424-4ED6-87A3-34361ED4FDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175CB11B-9424-4ED6-87A3-34361ED4FDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175CB11B-9424-4ED6-87A3-34361ED4FDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07054276-69B6-4B29-AAC8-0DF2E1D437F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07054276-69B6-4B29-AAC8-0DF2E1D437F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07054276-69B6-4B29-AAC8-0DF2E1D437F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07054276-69B6-4B29-AAC8-0DF2E1D437F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
