@@ -89,6 +89,27 @@ namespace LimitedEncryptions.Controllers
 
         };
 
+        //public static string GetDictionnary()
+        //{
+        //    string dictionary = "";
+
+        //    int key = 0;
+
+        //    foreach (var item in SecurityAlgorithm.DictionaryAlphabet)
+        //    {
+        //        dictionary += "'" + item.Key + "': '" + item.Value + "'" + '\t';
+        //        key++;
+
+        //        if (key == 5)
+        //        {
+        //            key = 0;
+        //            dictionary += '\n';
+        //        }
+        //    }
+
+        //    return dictionary;
+        //}
+
         public static string GetDictionnary()
         {
             string dictionary = "";
@@ -97,12 +118,21 @@ namespace LimitedEncryptions.Controllers
 
             foreach (var item in SecurityAlgorithm.DictionaryAlphabet)
             {
-                dictionary += "'" + item.Key + "': '" + item.Value + "'" + '\t';
+                if (key != 95 && key != 96)
+                    dictionary += "[" + item.Value + ": '" + item.Key + "']" + "\t";
+
+                if (key == 95)
+                    dictionary += "[95: ENTER]" + '\t';
+
+                if (key == 96)
+                    dictionary += "[96: TAB]" + '\t';
+
                 key++;
 
-                if (key == 5)
+
+                if (key % 5 == 0)
                 {
-                    key = 0;
+                    //key = 0;
                     dictionary += '\n';
                 }
             }

@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HillCipher));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.txtPlainText = new System.Windows.Forms.RichTextBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
@@ -121,6 +122,7 @@
             // 
             this.simpleButton9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.Image")));
             this.simpleButton9.Location = new System.Drawing.Point(5, 23);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(90, 23);
@@ -139,6 +141,8 @@
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.simpleButton2.Location = new System.Drawing.Point(403, 23);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(96, 23);
@@ -148,6 +152,7 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(235, 23);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(90, 23);
@@ -186,6 +191,7 @@
             // 
             this.btnExecuteSingleKey.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnExecuteSingleKey.Appearance.Options.UseFont = true;
+            this.btnExecuteSingleKey.Image = ((System.Drawing.Image)(resources.GetObject("btnExecuteSingleKey.Image")));
             this.btnExecuteSingleKey.Location = new System.Drawing.Point(5, 189);
             this.btnExecuteSingleKey.Name = "btnExecuteSingleKey";
             this.btnExecuteSingleKey.Size = new System.Drawing.Size(125, 23);
@@ -213,20 +219,20 @@
             // 
             // simpleButton3
             // 
+            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(104, 23);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(26, 23);
             this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = ">";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton4
             // 
+            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
             this.simpleButton4.Location = new System.Drawing.Point(5, 23);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(24, 23);
             this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "<";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // groupControl3
@@ -255,6 +261,7 @@
             // 
             this.btnGetAndExecuteNewSingleKey.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetAndExecuteNewSingleKey.Appearance.Options.UseFont = true;
+            this.btnGetAndExecuteNewSingleKey.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAndExecuteNewSingleKey.Image")));
             this.btnGetAndExecuteNewSingleKey.Location = new System.Drawing.Point(5, 160);
             this.btnGetAndExecuteNewSingleKey.Name = "btnGetAndExecuteNewSingleKey";
             this.btnGetAndExecuteNewSingleKey.Size = new System.Drawing.Size(125, 52);
@@ -326,6 +333,7 @@
             // 
             this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.Image")));
             this.simpleButton7.Location = new System.Drawing.Point(12, 12);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(282, 48);
@@ -335,32 +343,32 @@
             // 
             // chart1
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(810, 453);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart1.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(344, 200);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart2.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(810, 238);
             this.chart2.Name = "chart2";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart2.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(344, 200);
             this.chart2.TabIndex = 10;
             this.chart2.Text = "chart2";
@@ -421,6 +429,7 @@
             // 
             this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(5, 138);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(125, 23);

@@ -20,19 +20,29 @@ namespace LimitedEncryptions.Models
         public AverageStatisticResult(int key, int index, List<StatisticResult> list)
         {
             this.Key = key;
+            int counter = 0;
             AverageTicks = 0;
             foreach (var item in list)
             {
                 if (index == 1)
                 {
-                    if (item.KeyIndex == key) AverageTicks += item.Time;
+                    if (item.KeyIndex == key)
+                    {
+                        AverageTicks += item.Time;
+                        counter++;
+                    }
                 }
                 else
                 {
-                    if (item.PlaintTextIndex == key) AverageTicks += item.Time;
+                    if (item.PlaintTextIndex == key)
+                    {
+                        AverageTicks += item.Time;
+                        counter++;
+                    }
+
                 }
             }
-            AverageTicks = AverageTicks / list.Count;
+            AverageTicks = AverageTicks / counter;
         }
 
         public override string ToString()

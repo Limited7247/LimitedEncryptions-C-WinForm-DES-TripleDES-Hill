@@ -17,7 +17,7 @@ namespace LimitedEncryptions
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HillCipher());
+            Application.Run(new DESCipher());
             
         }
     }
