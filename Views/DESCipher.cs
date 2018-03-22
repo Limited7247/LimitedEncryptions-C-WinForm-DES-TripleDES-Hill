@@ -252,33 +252,86 @@ namespace LimitedEncryptions.Views
             this.chart1.Titles.Clear();
             this.chart1.Titles.Add("Thống kê theo khóa");
             this.chart1.Series.Clear();
+            //this.chart1.Series.
+            //this.chart1.
 
             long total = 0;
             Series series;
+            //chart1.Series. = SeriesChartType.StackedBar100;
+            //series.ChartType = SeriesChartType.StackedBar100;
+
             foreach (var item in averageList)
             {
                 series = chart1.Series.Add("Khóa " + (item.Key + 1).ToString());
+                series.ChartType = SeriesChartType.Column;
                 series.Points.Add(item.AverageTicks);
                 total += item.AverageTicks;
             }
             series = chart1.Series.Add("Trung bình");
+            series.ChartType = SeriesChartType.Column;
             series.Points.Add(total / averageList.Count);
             chart1.ResetAutoValues();
 
             /// Show by plaint text chart
-            this.chart2.Titles.Clear();
-            this.chart2.Titles.Add("Thống kê theo bản rõ");
-            this.chart2.Series.Clear();
-
-            total = 0;
-            foreach (var item in averageTextList)
+           
+            chart2.Titles.Clear();
+            chart2.Legends.Clear();
+            chart2.Annotations.Clear();
+            chart2.ChartAreas.Clear();
+            chart2.ChartAreas.Add(new ChartArea()
             {
-                series = chart2.Series.Add("Bản rõ " + (item.Key + 1).ToString());
-                series.Points.Add(item.AverageTicks);
-                total += item.AverageTicks;
+                AxisX = new Axis()
+                {
+                    Enabled = AxisEnabled.False,
+                    IsMarginVisible = false
+                },
+                AxisY = new Axis()
+                {
+                    Enabled = AxisEnabled.False,
+                    IsMarginVisible = false
+                },
+                AxisX2 = new Axis()
+                {
+                    Enabled = AxisEnabled.False,
+                    IsMarginVisible = false
+                },
+                AxisY2 = new Axis()
+                {
+                    Enabled = AxisEnabled.False,
+                    IsMarginVisible = false
+                },
+                Position = new ElementPosition(0, 0, 100, 100)
+            });
+
+            chart2.Height = 15;
+            //chart2.Width = 500;
+
+            chart2.Series.Clear();
+            long totalValues = averageTextList.Sum(a => a.AverageTicks);
+
+            double percentTotal = 0;
+            for (int index = 0; index < averageTextList.Count; index++)
+            {
+                Series seriesStackedBullet = chart2.Series.Add(
+                    $"Stacked Bullet Series {index+1}"
+                );
+                seriesStackedBullet.ChartType = SeriesChartType.StackedBar100;
+
+                long averageTicks = averageTextList[index].AverageTicks;
+                double percentItem = (double) averageTicks / totalValues * 100;
+                if (index == averageTextList.Count - 1)
+                {
+                    percentItem = 100 - percentTotal;
+                }
+                percentTotal += percentItem;
+
+                seriesStackedBullet.Points.Add(new DataPoint()
+                {
+                    YValues = new[] {percentItem},
+                    ToolTip = $"Khóa {index}: {averageTicks} - {percentItem:F2}%"
+                });
             }
-            series = chart2.Series.Add("Trung bình");
-            series.Points.Add(total / averageTextList.Count);
+
             chart2.ResetAutoValues();
         }
 

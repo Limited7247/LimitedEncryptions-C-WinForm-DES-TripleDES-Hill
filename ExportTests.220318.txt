@@ -1,0 +1,70 @@
+Thống kê đầy đủ: 
+0 0 1184 Ticks
+0 1 606 Ticks
+0 2 843 Ticks
+0 3 1114 Ticks
+0 4 925 Ticks
+1 0 579 Ticks
+1 1 499 Ticks
+1 2 467 Ticks
+1 3 462 Ticks
+1 4 493 Ticks
+2 0 451 Ticks
+2 1 449 Ticks
+2 2 717 Ticks
+2 3 753 Ticks
+2 4 723 Ticks
+3 0 763 Ticks
+3 1 730 Ticks
+3 2 797 Ticks
+3 3 872 Ticks
+3 4 963 Ticks
+4 0 925 Ticks
+4 1 916 Ticks
+4 2 932 Ticks
+4 3 884 Ticks
+4 4 890 Ticks
+5 0 842 Ticks
+5 1 816 Ticks
+5 2 821 Ticks
+5 3 917 Ticks
+5 4 838 Ticks
+6 0 860 Ticks
+6 1 895 Ticks
+6 2 843 Ticks
+6 3 955 Ticks
+6 4 864 Ticks
+7 0 751 Ticks
+7 1 552 Ticks
+7 2 477 Ticks
+7 3 708 Ticks
+7 4 510 Ticks
+8 0 637 Ticks
+8 1 523 Ticks
+8 2 533 Ticks
+8 3 508 Ticks
+8 4 522 Ticks
+9 0 509 Ticks
+9 1 489 Ticks
+9 2 627 Ticks
+9 3 497 Ticks
+9 4 539 Ticks
+
+Thống kê theo bản rõ: 
+0	934 Ticks
+1	500 Ticks
+2	618 Ticks
+3	825 Ticks
+4	909 Ticks
+5	846 Ticks
+6	883 Ticks
+7	599 Ticks
+8	544 Ticks
+9	532 Ticks
+
+Thống kê theo khóa: 
+0	750 Ticks
+1	647 Ticks
+2	705 Ticks
+3	767 Ticks
+4	726 Ticks

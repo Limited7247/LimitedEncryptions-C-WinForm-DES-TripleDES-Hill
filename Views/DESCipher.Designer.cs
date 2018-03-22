@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DESCipher));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
@@ -82,6 +81,7 @@
             this.btnGetAndExecuteNewSingleKey = new DevExpress.XtraEditors.SimpleButton();
             this.rbtnDES = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
             this.rbtn3DES = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -92,7 +92,7 @@
             this.rbtnHashingYes = new System.Windows.Forms.RadioButton();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
             this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
@@ -117,6 +117,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox2
@@ -124,7 +125,7 @@
             this.richTextBox2.Location = new System.Drawing.Point(5, 21);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(125, 159);
+            this.richTextBox2.Size = new System.Drawing.Size(150, 159);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
             // 
@@ -133,7 +134,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(5, 23);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(125, 157);
+            this.richTextBox1.Size = new System.Drawing.Size(150, 157);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -146,7 +147,7 @@
             this.groupControl9.Controls.Add(this.simpleButton1);
             this.groupControl9.Controls.Add(this.simpleButton5);
             this.groupControl9.Controls.Add(this.txtCustomKey);
-            this.groupControl9.Location = new System.Drawing.Point(11, 289);
+            this.groupControl9.Location = new System.Drawing.Point(12, 435);
             this.groupControl9.Name = "groupControl9";
             this.groupControl9.Size = new System.Drawing.Size(135, 169);
             this.groupControl9.TabIndex = 26;
@@ -218,7 +219,7 @@
             this.groupControl8.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.groupControl8.AppearanceCaption.Options.UseFont = true;
             this.groupControl8.Controls.Add(this.txtHashKey);
-            this.groupControl8.Location = new System.Drawing.Point(158, 289);
+            this.groupControl8.Location = new System.Drawing.Point(159, 435);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.Size = new System.Drawing.Size(135, 169);
             this.groupControl8.TabIndex = 25;
@@ -250,42 +251,53 @@
             this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.Image")));
-            this.simpleButton7.Location = new System.Drawing.Point(11, 9);
+            this.simpleButton7.Location = new System.Drawing.Point(809, 9);
             this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(282, 48);
+            this.simpleButton7.Size = new System.Drawing.Size(160, 48);
             this.simpleButton7.TabIndex = 19;
-            this.simpleButton7.Text = "THỰC HIỆN THỐNG KÊ";
+            this.simpleButton7.Text = "THỐNG KÊ";
             this.simpleButton7.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // chart2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(809, 235);
+            this.chart2.BorderlineWidth = 0;
+            chartArea3.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea3.AxisX.IsMarginVisible = false;
+            chartArea3.AxisX.MaximumAutoSize = 100F;
+            chartArea3.AxisX2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea3.AxisX2.IsMarginVisible = false;
+            chartArea3.AxisX2.MaximumAutoSize = 100F;
+            chartArea3.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea3.AxisY.IsMarginVisible = false;
+            chartArea3.AxisY.MaximumAutoSize = 100F;
+            chartArea3.AxisY2.IsMarginVisible = false;
+            chartArea3.AxisY2.MaximumAutoSize = 100F;
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            this.chart2.Location = new System.Drawing.Point(3, 17);
+            this.chart2.Margin = new System.Windows.Forms.Padding(0);
             this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(344, 200);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar100;
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
+            this.chart2.Size = new System.Drawing.Size(318, 15);
             this.chart2.TabIndex = 23;
             this.chart2.Text = "chart2";
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
             legend2.Name = "Legend1";
             this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(809, 450);
+            this.chart1.Location = new System.Drawing.Point(809, 294);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(344, 200);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(326, 183);
             this.chart1.TabIndex = 22;
             this.chart1.Text = "chart1";
             // 
@@ -294,9 +306,9 @@
             this.groupControl5.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.groupControl5.AppearanceCaption.Options.UseFont = true;
             this.groupControl5.Controls.Add(this.richTextBox2);
-            this.groupControl5.Location = new System.Drawing.Point(11, 464);
+            this.groupControl5.Location = new System.Drawing.Point(809, 63);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(135, 186);
+            this.groupControl5.Size = new System.Drawing.Size(160, 186);
             this.groupControl5.TabIndex = 20;
             this.groupControl5.Text = "Thống kê t. văn bản";
             // 
@@ -305,9 +317,9 @@
             this.groupControl6.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.groupControl6.AppearanceCaption.Options.UseFont = true;
             this.groupControl6.Controls.Add(this.richTextBox1);
-            this.groupControl6.Location = new System.Drawing.Point(158, 464);
+            this.groupControl6.Location = new System.Drawing.Point(975, 63);
             this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Size = new System.Drawing.Size(135, 186);
+            this.groupControl6.Size = new System.Drawing.Size(160, 186);
             this.groupControl6.TabIndex = 21;
             this.groupControl6.Text = "Thống kê theo khóa";
             // 
@@ -476,7 +488,7 @@
             this.groupControl2.Controls.Add(this.txtKeysCounter);
             this.groupControl2.Controls.Add(this.btnNextKey);
             this.groupControl2.Controls.Add(this.btnPreviousKey);
-            this.groupControl2.Location = new System.Drawing.Point(11, 63);
+            this.groupControl2.Location = new System.Drawing.Point(12, 209);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(135, 220);
             this.groupControl2.TabIndex = 16;
@@ -570,7 +582,7 @@
             this.groupControl3.Controls.Add(this.simpleButton3);
             this.groupControl3.Controls.Add(this.txtKey);
             this.groupControl3.Controls.Add(this.btnGetAndExecuteNewSingleKey);
-            this.groupControl3.Location = new System.Drawing.Point(158, 63);
+            this.groupControl3.Location = new System.Drawing.Point(159, 209);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(135, 220);
             this.groupControl3.TabIndex = 17;
@@ -634,18 +646,29 @@
             this.groupBox1.Controls.Add(this.rbtn3DES);
             this.groupBox1.Controls.Add(this.rbtnDES);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(809, 9);
+            this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(344, 52);
+            this.groupBox1.Size = new System.Drawing.Size(281, 78);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thuật toán";
+            // 
+            // simpleButton18
+            // 
+            this.simpleButton18.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton18.Image")));
+            this.simpleButton18.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton18.Location = new System.Drawing.Point(18, 46);
+            this.simpleButton18.Name = "simpleButton18";
+            this.simpleButton18.Size = new System.Drawing.Size(79, 23);
+            this.simpleButton18.TabIndex = 9;
+            this.simpleButton18.Text = "Hill";
+            this.simpleButton18.Click += new System.EventHandler(this.btnHill_Click);
             // 
             // rbtn3DES
             // 
             this.rbtn3DES.AutoSize = true;
             this.rbtn3DES.Checked = true;
-            this.rbtn3DES.Location = new System.Drawing.Point(119, 21);
+            this.rbtn3DES.Location = new System.Drawing.Point(174, 21);
             this.rbtn3DES.Name = "rbtn3DES";
             this.rbtn3DES.Size = new System.Drawing.Size(90, 19);
             this.rbtn3DES.TabIndex = 29;
@@ -657,9 +680,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(809, 67);
+            this.groupBox2.Location = new System.Drawing.Point(12, 93);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(160, 52);
+            this.groupBox2.Size = new System.Drawing.Size(135, 52);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cipher Mode";
@@ -680,9 +703,9 @@
             // 
             this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(993, 67);
+            this.groupBox3.Location = new System.Drawing.Point(159, 93);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(160, 52);
+            this.groupBox3.Size = new System.Drawing.Size(135, 52);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Padding Mode";
@@ -704,9 +727,9 @@
             this.groupBox4.Controls.Add(this.rbtnHashingNo);
             this.groupBox4.Controls.Add(this.rbtnHashingYes);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(809, 125);
+            this.groupBox4.Location = new System.Drawing.Point(12, 151);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(344, 52);
+            this.groupBox4.Size = new System.Drawing.Size(282, 52);
             this.groupBox4.TabIndex = 32;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Băm Khóa";
@@ -714,7 +737,7 @@
             // rbtnHashingNo
             // 
             this.rbtnHashingNo.AutoSize = true;
-            this.rbtnHashingNo.Location = new System.Drawing.Point(211, 21);
+            this.rbtnHashingNo.Location = new System.Drawing.Point(174, 21);
             this.rbtnHashingNo.Name = "rbtnHashingNo";
             this.rbtnHashingNo.Size = new System.Drawing.Size(66, 19);
             this.rbtnHashingNo.TabIndex = 33;
@@ -742,29 +765,30 @@
             this.simpleButton17.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.simpleButton17.Appearance.Options.UseFont = true;
             this.simpleButton17.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton17.Image")));
-            this.simpleButton17.Location = new System.Drawing.Point(809, 183);
+            this.simpleButton17.Location = new System.Drawing.Point(975, 9);
             this.simpleButton17.Name = "simpleButton17";
-            this.simpleButton17.Size = new System.Drawing.Size(344, 46);
+            this.simpleButton17.Size = new System.Drawing.Size(160, 48);
             this.simpleButton17.TabIndex = 33;
-            this.simpleButton17.Text = "XUẤT FILE THỐNG KÊ";
+            this.simpleButton17.Text = "XUẤT FILE";
             this.simpleButton17.Click += new System.EventHandler(this.btnSaveStatistics);
             // 
-            // simpleButton18
+            // groupBox5
             // 
-            this.simpleButton18.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton18.Image")));
-            this.simpleButton18.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton18.Location = new System.Drawing.Point(245, 20);
-            this.simpleButton18.Name = "simpleButton18";
-            this.simpleButton18.Size = new System.Drawing.Size(79, 23);
-            this.simpleButton18.TabIndex = 9;
-            this.simpleButton18.Text = "Hill";
-            this.simpleButton18.Click += new System.EventHandler(this.btnHill_Click);
+            this.groupBox5.Controls.Add(this.chart2);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(809, 249);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(326, 39);
+            this.groupBox5.TabIndex = 34;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Thống kê theo bản rõ";
             // 
             // DESCipher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 663);
+            this.ClientSize = new System.Drawing.Size(1141, 663);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.simpleButton17);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -774,7 +798,6 @@
             this.Controls.Add(this.groupControl8);
             this.Controls.Add(this.groupControl7);
             this.Controls.Add(this.simpleButton7);
-            this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.groupControl5);
             this.Controls.Add(this.groupControl6);
@@ -815,6 +838,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -878,5 +902,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton17;
         private DevExpress.XtraEditors.SimpleButton simpleButton18;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
